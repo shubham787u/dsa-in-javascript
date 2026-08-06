@@ -5,7 +5,8 @@
 let num = 45678;
 let count = 0;
 
-while (num > 0) {           //while , gives always one condition is true,
+while (num > 0) {
+  //while , gives always one condition is true,
   num = Math.floor(num / 10);
   count++;
 }
