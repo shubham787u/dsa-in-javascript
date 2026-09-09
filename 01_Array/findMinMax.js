@@ -4,7 +4,7 @@ const arr = [10, 20, 30, 40, 50];
 function findMinMax(arr) {
   let min = arr[0];
   let max = arr[0];
-  for (let i = 1; i < arr.length; i++) {   
+  for (let i = 1; i < arr.length; i++) {
     if (arr[i] < min) {
       min = arr[i];
     }
@@ -12,10 +12,9 @@ function findMinMax(arr) {
       max = arr[i];
     }
   }
-  return {min, max};
+  return { min, max };
 }
 console.log(findMinMax(arr));
-
 
 //!=========================================
 // function findMax(arr) {
