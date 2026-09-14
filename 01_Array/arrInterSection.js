@@ -1,0 +1,18 @@
+//! 9. Intersection of Two Arrays
+
+function arrayInterSection(arr1, arr2) {
+  let result = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
+        result[result.length] = arr1[i];
+        arr2[j] = undefined;
+        break;
+      }
+    }
+  }
+  return result;
+}
+console.log(arrayInterSection([1, 2, 3, 4, 5], [7, 8, 4]));
+
+//answer - [ 4, 5 ]-comman elements
